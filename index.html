@@ -12,10 +12,10 @@
         <header>
             <h2 id="logo">Stephen <br> Thorsteinsson</h2>
             <ul class="navigation-items">
-              <li class="navigation-item"><a href="#about-me">About Me</a></li>
-              <li class="navigation-item"><a href="#projects">Projects</a></li>
-              <li class="navigation-item"><a href="#skills">Skills</a></li>
-              <li class="navigation-item"><a href="/contact.html">Contact</a></li>
+              <li class="navigation-item" onclick="aboutMeFunction()"><a href="#about-me">About Me</a></li>
+              <li class="navigation-item" onclick="projectsFunction()"><a href="#projects">Projects</a></li>
+              <li class="navigation-item" onclick="skillsFunction()"><a href="#skills">Skills</a></li>
+              <li class="navigation-item" onclick="contactFunction()"><a href="/contact.html">Contact</a></li>
             </ul>
         </header>
         <div class="main">
@@ -53,5 +53,18 @@
     <foot>
         
     </foot>
-    <script></script>
+    <script>
+        function aboutMeFunction() {
+          document.getElementById("#aboutMe").style.color = "red";
+        }
+        function projectsFunction() {
+          document.getElementById("#projects").style.color = "red";
+        }
+        function skillsFunction() {
+          document.getElementById("#skills").style.color = "red";
+        }
+        function contactFunction() {
+          document.getElementById("#contact").style.color = "red";
+        }
+        </script>
 </html>
