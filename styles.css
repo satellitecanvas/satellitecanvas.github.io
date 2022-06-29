@@ -62,18 +62,21 @@ h1 {
   z-index: 0;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  visibility: hidden;
 }
 
 .main #projects {
   z-index: 0;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  visibility: hidden;
 }
 
 .main #skills {
   z-index: 0;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  visibility: hidden;
 }
 
 .icon {

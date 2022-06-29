@@ -5,15 +5,16 @@
         <link rel="stylesheet" href="./styles.css" type="text/css">
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<script type="text/javascript" src="./site.js"></script>-->
     </head>
     <body>
         <header>
             <h2 id="logo">Stephen Thorsteinsson</h2>
             <ul class="navigation-items">
-              <li class="navigation-item"><a href="#about-me">About Me</a></li>
-              <li class="navigation-item"><a href="#projects">Projects</a></li>
-              <li class="navigation-item"><a href="#skills">Skills</a></li>
-              <li class="navigation-item"><a href="/contact.html">Contact</a></li>
+              <li class="navigation-item"><a href="./index.html#aboutme">About Me</a></li>
+              <li class="navigation-item"><a href="./index.html#projects">Projects</a></li>
+              <li class="navigation-item"><a href="./index.html#skills">Skills</a></li>
+              <li class="navigation-item"><a href="./contact.html">Contact</a></li>
             </ul>
         </header>
         <main>
@@ -28,4 +29,28 @@
             </section>
         </main>
     </body>
+    <script>
+      function aboutMeFunction() {
+        document.getElementById("aboutme").style.zIndex = "1";
+        document.getElementById("aboutme").style.visibility = "visible";
+        document.getElementById("projects").style.visibility = "hidden";
+        document.getElementById("skills").style.visibility = "hidden";
+      };
+      </script>
+      <script>
+      function projectsFunction() {
+        document.getElementById("projects").style.zIndex = "1";
+        document.getElementById("projects").style.visibility = "visible";
+        document.getElementById("aboutme").style.visibility = "hidden";
+        document.getElementById("skills").style.visibility = "hidden";
+      };
+      </script>
+      <script>
+      function skillsFunction() {
+        document.getElementById("skills").style.zIndex = "1";
+        document.getElementById("skills").style.visibility = "visible";
+        document.getElementById("aboutme").style.visibility = "hidden";
+        document.getElementById("projects").style.visibility = "hidden";
+      };
+      </script>
 </html>

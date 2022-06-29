@@ -6,16 +6,17 @@
         <link rel="stylesheet" href="./all.min.css" type="text/css">
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<script type="text/javascript" src="./site.js"></script>-->
         <script src="https://kit.fontawesome.com/0fb1e65593.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <h2 id="logo">Stephen <br> Thorsteinsson</h2>
             <ul class="navigation-items">
-              <li class="navigation-item" onclick="aboutMeFunction()"><a href="#about-me">About Me</a></li>
-              <li class="navigation-item" onclick="projectsFunction()"><a href="#projects">Projects</a></li>
-              <li class="navigation-item" onclick="skillsFunction()"><a href="#skills">Skills</a></li>
-              <li class="navigation-item" onclick="contactFunction()"><a href="/contact.html">Contact</a></li>
+              <li class="navigation-item"><a href="#aboutme" onclick="aboutMeFunction()">About Me</a></li>
+              <li class="navigation-item" ><a href="#projects" onclick="projectsFunction()">Projects</a></li>
+              <li class="navigation-item" ><a href="#skills" onclick="skillsFunction()">Skills</a></li>
+              <li class="navigation-item"><a href="./contact.html">Contact</a></li>
             </ul>
         </header>
         <div class="main">
@@ -47,24 +48,32 @@
               <i class="fab fa-github"></i>
             </div>
           </section>
-          <!-- link to contact here -->
         </div>
     </body>
     <foot>
-        
     </foot>
     <script>
-        function aboutMeFunction() {
-          document.getElementById("#aboutMe").style.color = "red";
-        }
-        function projectsFunction() {
-          document.getElementById("#projects").style.color = "red";
-        }
-        function skillsFunction() {
-          document.getElementById("#skills").style.color = "red";
-        }
-        function contactFunction() {
-          document.getElementById("#contact").style.color = "red";
-        }
-        </script>
+    function aboutMeFunction() {
+      document.getElementById("aboutme").style.zIndex = "1";
+      document.getElementById("aboutme").style.visibility = "visible";
+      document.getElementById("projects").style.visibility = "hidden";
+      document.getElementById("skills").style.visibility = "hidden";
+    };
+    </script>
+    <script>
+    function projectsFunction() {
+      document.getElementById("projects").style.zIndex = "1";
+      document.getElementById("projects").style.visibility = "visible";
+      document.getElementById("aboutme").style.visibility = "hidden";
+      document.getElementById("skills").style.visibility = "hidden";
+    };
+    </script>
+    <script>
+    function skillsFunction() {
+      document.getElementById("skills").style.zIndex = "1";
+      document.getElementById("skills").style.visibility = "visible";
+      document.getElementById("aboutme").style.visibility = "hidden";
+      document.getElementById("projects").style.visibility = "hidden";
+    };
+    </script>
 </html>
