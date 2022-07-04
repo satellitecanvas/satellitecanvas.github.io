@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>satellitecanvas</title>
+        <link rel="stylesheet" href="./new.css" type="text/css">
+        <link rel="stylesheet" href="./all.min.css" type="text/css">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<script type="text/javascript" src="./site.js"></script>-->
+        <script src="https://kit.fontawesome.com/0fb1e65593.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <section id="navigation">
+            <h1 id="logo">Stephen <br> Thorsteinsson</h1>
+            <ul class="navigation-items">
+              <li class="navigation-item" id="nav-item1"><a href="#aboutme" onclick="aboutMeFunction()">About Me</a></li>
+              <li class="navigation-item" id="nav-item2"><a href="#projects" onclick="projectsFunction()">Projects</a></li>
+              <li class="navigation-item" id="nav-item3"><a href="#skills" onclick="skillsFunction()">Skills</a></li>
+              <li class="navigation-item" id="nav-item4"><a href="./contact.html">Contact</a></li>
+            </ul>
+            </section>
+        </header>
+        <div class="main">
+        <section id="aboutme">
+            <h2 id="abouttitle">about me</h2>
+            <section id="aboutboxes">
+                <p id ="aboutbox1">I am a barista who is tired of being broke so I'm studying code and programming and hopes of making $$$</p>
+                <p id ="aboutbox1">words words words</p>
+            </section>
+        </section>
+        <section id="projects">
+            <h2>projects</h2>
+            <p>nothing here yet! will update as I go</p>
+        </section>
+        <section id="skills">
+            <h2>skills</h2>
+            <div id="skills-container">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-react"></i>
+              <i class="fab fa-aws"></i>
+              <i class="fab fa-sketch"></i>
+              <i class="fab fa-figma"></i>
+              <i class="fab fa-git"></i>
+              <i class="fab fa-chrome"></i>
+              <i class="fas fa-terminal"></i>
+              <i class="fas fa-universal-access"></i>
+              <i class="fab fa-npm"></i>
+              <i class="fab fa-node"></i>
+              <i class="fab fa-github"></i>
+            </div>
+          </section>
+        </div>
+    </body>
+    <foot>
+    </foot>
+    <script>
+    function aboutMeFunction() {
+      document.getElementById("aboutme").style.zIndex = "1";
+      document.getElementById("aboutme").style.visibility = "visible";
+      document.getElementById("projects").style.visibility = "hidden";
+      document.getElementById("skills").style.visibility = "hidden";
+    };
+    </script>
+    <script>
+    function projectsFunction() {
+      document.getElementById("projects").style.zIndex = "1";
+      document.getElementById("projects").style.visibility = "visible";
+      document.getElementById("aboutme").style.visibility = "hidden";
+      document.getElementById("skills").style.visibility = "hidden";
+    };
+    </script>
+    <script>
+    function skillsFunction() {
+      document.getElementById("skills").style.zIndex = "1";
+      document.getElementById("skills").style.visibility = "visible";
+      document.getElementById("aboutme").style.visibility = "hidden";
+      document.getElementById("projects").style.visibility = "hidden";
+    };
+    </script>
+    <footer>
+        <section id="randomcircle">
+        </section>
+    </footer>
+</html>
