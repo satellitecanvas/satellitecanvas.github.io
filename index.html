@@ -13,9 +13,9 @@
         <header>
             <h2 id="logo">Stephen <br> Thorsteinsson</h2>
             <ul class="navigation-items">
-              <li class="navigation-item"><a href="#aboutme" onclick="aboutMeFunction()">About Me</a></li>
-              <li class="navigation-item" ><a href="#projects" onclick="projectsFunction()">Projects</a></li>
-              <li class="navigation-item" ><a href="#skills" onclick="skillsFunction()">Skills</a></li>
+              <li class="navigation-item"><a href="#aboutme" onclick="aboutMe()">About Me</a></li>
+              <li class="navigation-item" ><a href="#projects" onclick="projects()">Projects</a></li>
+              <li class="navigation-item" ><a href="#skills" onclick="skills()">Skills</a></li>
               <li class="navigation-item"><a href="./contact.html">Contact</a></li>
             </ul>
         </header>
@@ -49,31 +49,8 @@
             </div>
           </section>
         </div>
-    </body>
-    <foot>
-    </foot>
-    <script>
-    function aboutMeFunction() {
-      document.getElementById("aboutme").style.zIndex = "1";
-      document.getElementById("aboutme").style.visibility = "visible";
-      document.getElementById("projects").style.visibility = "hidden";
-      document.getElementById("skills").style.visibility = "hidden";
-    };
-    </script>
-    <script>
-    function projectsFunction() {
-      document.getElementById("projects").style.zIndex = "1";
-      document.getElementById("projects").style.visibility = "visible";
-      document.getElementById("aboutme").style.visibility = "hidden";
-      document.getElementById("skills").style.visibility = "hidden";
-    };
-    </script>
-    <script>
-    function skillsFunction() {
-      document.getElementById("skills").style.zIndex = "1";
-      document.getElementById("skills").style.visibility = "visible";
-      document.getElementById("aboutme").style.visibility = "hidden";
-      document.getElementById("projects").style.visibility = "hidden";
-    };
-    </script>
+        <footer>
+        </footer>
+      </body>
+    <script src="./site.js"></script>
 </html>
